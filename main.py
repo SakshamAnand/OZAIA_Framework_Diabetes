@@ -18,7 +18,7 @@ st.title("OZAIA Net Framework")
 
 # Sidebar: Image and Placeholder Text
 with st.sidebar:
-    st.image("OZAIA_LOGO.png", caption="OZAIA Logo", use_container_width=True)
+    st.image("OZAIA_LOGO.png", use_container_width=True)
     st.markdown(f"OZAIANet is an innovative deep learning framework designed for automated diabetes detection using plantar thermographic images. The system employs an ensemble of convolutional neural networks DenseNet121 and EfficientNetV2B0 to analyze thermal patterns in foot sole images, achieving 94.34% accuracy in distinguishing between diabetic and non-diabetic individuals. \n\nInput Requirements: Infrared thermographic images of foot soles (plantar surface) in standard thermal imaging formats \n\nThis project was developed by Saksham Anand in collaboration with FDDI - VIT Chennai, under the guidance of Dr. Suganya R and Dr. Vimudha M.") 
 
 st.markdown("""
@@ -27,7 +27,7 @@ This tool predicts whether a given foot thermograph shows signs of diabetic neur
 
 ⚠️ **Disclaimer**: This tool is for research and educational purposes only. It is not intended for clinical diagnosis. Please consult a medical professional for actual healthcare decisions.
 """)
-st.image("instruct.png", caption="OZAIA Logo", use_container_width=True)
+st.image("instruct.png", use_container_width=True)
 # -------------------------
 # Load Model
 # -------------------------
@@ -111,3 +111,23 @@ Clinical validation is **absolutely necessary** in such cases.
         st.pyplot(fig)
 
     st.success("LIME explanation complete.")
+
+# Contact Text
+
+st.markdown("""
+## 📬 Contact Me
+Connect with me on:
+
+<a href="https://github.com/SakshamAnand" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="30" />
+</a>
+
+<a href="https://linkedin.com/in/saksham-anand05/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="30" />
+</a>
+
+<a href="https://instagram.com/saksham.anand05/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30" />
+</a>
+""", unsafe_allow_html=True)
+
